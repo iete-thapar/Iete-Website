@@ -64,7 +64,10 @@ function Event() {
       </section>
 
       {/* Events Section */}
-      <section className="w-full flex flex-col items-center bg-black">
+      <section
+        className="w-full flex flex-col items-center bg-black mt-[150px] lg:gap-y-[250px] pb-[50px]
+       gap-y-[100px]"
+      >
         {events.map((event, index) => (
           <Elementos
             key={event.number}
@@ -138,11 +141,15 @@ const Elementos = ({ number, tagline, title, description }) => {
       ref={ref}
       className={`w-[80%] lg:w-[60%] max-md:max-w-full transition-opacity duration-700 ease-in-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-20"
-      }`}
+      } `}
     >
-      <div className={`flex gap-5 max-md:flex-col ${number % 2 === 0 ? "flex-row-reverse" : ""}`}>
+      <div
+        className={`flex gap-2 max-md:flex-col ${
+          number % 2 === 0 ? "flex-row-reverse" : ""
+        }`}
+      >
         <section className="flex flex-col-reverse w-[59%] max-md:ml-0 max-md:w-full">
-          <div className="mt-10 max-md:mt-10 max-md:max-w-full relative">
+          <div className="mt-10 max-md:mt-10 max-md:max-w-full ">
             <NumberedSection number={number} />
             <ContentSection
               tagline={tagline}

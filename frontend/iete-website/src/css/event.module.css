@@ -5,16 +5,27 @@
   font-family: "Alatsi", sans-serif;
   -webkit-text-stroke-width: 5px;
   -webkit-text-stroke-color: rgb(209, 179, 225);
+  animation: eventTitleAnimation 2s ease 0s forwards;
 }
 
-/* src/css/event.module.css */
+@keyframes eventTitleAnimation {
+  0% {
+    transform: translateY(3%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .customH3 {
   color: #ca98f8; /* text-purple-300 */
   font-size: 230px; /* text-[60px] */
   font-weight: 600; /* font-semibold */
   position: absolute;
   bottom: 50px; /* lg:bottom-[50px] */
-  /* text-stroke */
+  animation: eventTitleAnimation 2s ease 0s forwards;
 }
 
 @media only screen and (max-width: 1585px) {
