@@ -6,7 +6,8 @@ const Gallery = () => {
 
     return (
         <div className="gallery-container">
-          {/* gallery heading */}
+         <div className="gallery-background-text">GALLERY</div>
+         <div className="gallery-foreground-text">GALLERY</div>
             
           
        
@@ -42,6 +43,7 @@ const Gallery = () => {
             <div className="grid-item"></div>
            
           </div>
+          
 
       
           

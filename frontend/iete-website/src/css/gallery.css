@@ -5,9 +5,10 @@
 }
 
 body {
-    min-height: 100vh;
-    background: linear-gradient(135deg, #000000, #0a0048, #340a58, #6c33a5, #9c6ed3);
+    
+    background: #000000;
     font-family: Arial, sans-serif;
+    min-height: 100%;
 }
 .grid-main{
     padding-top: 10rem;
@@ -15,13 +16,47 @@ body {
 }
 
 .gallery-container {
+    
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     overflow: hidden;
+    min-height: 2401px;
+    min-width: 1440px;
+    background-repeat: no-repeat;  /* Prevents the background image from repeating */
+    background-position: center center;  /* Centers the image horizontally and vertically */
+    background-size: cover;
+    
+    background-image: url("../assets/bggallery.png")  ;
     
 }
+.gallery-background-text {
+    position: absolute;
+    font-size: 15rem; /* Adjust size as needed */
+    padding-top: 7rem;
+    color: transparent; /* Makes the text color transparent */
+    -webkit-text-stroke: 2px thistle; /* Creates a white outline around the text */
+
+    opacity: 0.3;
+    
+
+
+    z-index: 1; /* Behind the foreground text */
+  }
+  
+  .gallery-foreground-text {
+    font-size: 7rem; /* Adjust size as needed */
+    
+    text-transform: uppercase;
+    padding-top: 19rem;
+    z-index: 2; /* In front of the background text */
+    opacity: 1; /* Slight opacity for effect */
+    background: linear-gradient(90deg, rgb(80, 77, 233), rgb(176, 165, 236));
+    color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 /* Main Title */
 .gallery-main {
@@ -34,15 +69,19 @@ body {
     opacity: 0.1;
     position: relative;
 }
-
+.img{
+    min-width: none;
+    padding-bottom: 0rem;
+}
 .grid-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 1.5rem;
     transform: rotate(-20.48deg);
-    padding-right: 9rem;
-    padding-top:20rem;
+    padding-top: 33rem;
+    padding-right: 12rem;
+    
     overflow: hidden;
 }
 
@@ -53,7 +92,7 @@ body {
     gap: 1.5rem;
     padding-top:5rem;
     transform: rotate(-20.48deg);
-    padding-right: 3rem;
+    padding-right: 2rem;
     
     overflow: hidden;
 }
@@ -62,10 +101,10 @@ body {
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(1, 1fr);
     gap: 1.5rem;
-    padding-top:5rem;
+    padding-top:4rem;
     transform: rotate(-20.48deg);
     padding-left: 5rem;
-    padding-bottom: 20rem;
+    padding-bottom: 5rem;
     
     overflow: hidden;
 }
