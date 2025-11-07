@@ -2,13 +2,14 @@ import React, { useEffect, useState } from 'react'
 import { Atom } from 'lucide-react'
 import styles from '../css/department.module.css'
 import Heading from '../components/Heading'
-import e1 from '../assets/e1.jpeg'
-import e2 from '../assets/e2.jpeg'
-import e3 from '../assets/e3.jpeg'
-import e4 from '../assets/e4.jpeg'
-import e5 from '../assets/e5.jpeg'
-import elementos from '../assets/elementos.png'
-import landingBG1 from '../assets/landingBG1.png'
+// assets moved to public/assets — reference via public URLs
+const e1 = '/assets/e1.jpeg'
+const e2 = '/assets/e2.jpeg'
+const e3 = '/assets/e3.jpeg'
+const e4 = '/assets/e4.jpeg'
+const e5 = '/assets/e5.jpeg'
+const elementos = '/assets/elementos.png'
+const landingBG1 = '/assets/landingBG1.png'
 
 const departments = [
   {
@@ -62,7 +63,7 @@ const projects = [
     title: 'Elementos Website',
     description:
       'Web development is the backbone of the modern internet, enabling the creation of websites and web applications that power everything from social media to online shopping. It involves designing, building, and maintaining digital platforms using technologies like HTML, CSS, JavaScript, and various frameworks. Web development plays a crucial role in how we access information, connect with others, and interact with services in our daily lives.',
-    image: 'Iete-Website/frontend/iete-website/src/assets/elementos.jpeg',
+    image: '/assets/elementos.jpeg',
   },
 ]
 

@@ -1,8 +1,9 @@
 import React, { useRef, useEffect, useState } from 'react'
-import event from '../assets/eventbg.jpg'
-import flagthon from '../assets/event/flag.jpg'
-import elementos from '../assets/event/elemEvent.png'
-import orientation from '../assets/event/orientEvent.jpg'
+// assets moved to public/assets — use public URLs instead of importing
+const event = '/assets/eventbg.jpg'
+const flagthon = '/assets/event/flag.jpg'
+const elementos = '/assets/event/elemEvent.png'
+const orientation = '/assets/event/orientEvent.jpg'
 
 import styles from '../css/event.module.css'
 

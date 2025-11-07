@@ -7,7 +7,7 @@ import Marquee from 'react-fast-marquee'
 function Landing() {
   return (
     <div className="overflow-hidden flex flex-col">
-      <section className="w-screen min-h-screen bg-[url('/src/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat flex flex-col justify-start items-center text-center px-4">
+      <section className="w-screen min-h-screen bg-[url('/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat flex flex-col justify-start items-center text-center px-4">
         <h1 className={styles.he}>IETE</h1>
         <h4 className="text-white text-xl md:text-2xl lg:text-3xl">
           Students' Forum
@@ -18,7 +18,7 @@ function Landing() {
         </p>
         <div className="flex justify-center items-center mt-6 md:mt-10">
           <img
-            src="/src/assets/iete_logo.png"
+            src="/assets/iete_logo.png"
             alt="IETE Logo"
             className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain"
           />
@@ -32,7 +32,7 @@ function Landing() {
       </section>
       <section
         id="aboutus"
-        className="relative flex flex-col items-center w-screen min-h-screen bg-[url('/src/assets/landingBG2.png')] bg-cover bg-center bg-no-repeat px-4 "
+        className="relative flex flex-col items-center w-screen min-h-screen bg-[url('/assets/landingBG2.png')] bg-cover bg-center bg-no-repeat px-4 "
       >
         <Heading text="ABOUT US" />
 
@@ -92,7 +92,7 @@ function Landing() {
         <Heading text="SPONSORSHIPS" />
         <div className="flex justify-center items-center w-full">
           <img
-            src="/src/assets/nsaid.png"
+            src="/assets/nsaid.png"
             alt="NSAID Logo"
             className="w-full max-w-[600px] object-contain mt-[50px] lg:mt-25"
           />
@@ -100,7 +100,7 @@ function Landing() {
 
         <div className="w-full md:w-[85%] lg:w-[70%] h-fit mt-10 md:mt-16 lg:mt-20 flex flex-col-reverse lg:flex-row items-center p-4 md:p-6 lg:p-8 gap-8 lg:gap-x-9 justify-center">
           <img
-            src="/src/assets/nsaidp.png"
+            src="/assets/nsaidp.png"
             alt="NSAID Logo"
             className="w-full max-w-[500px] object-contain mt-[50px] lg:mt-25"
           />

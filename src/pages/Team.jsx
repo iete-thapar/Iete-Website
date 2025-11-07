@@ -6,103 +6,103 @@ function Team() {
       id: 1,
       name: 'Arshit Thakur',
       position: 'GENERAL SECRETARY',
-      image: '../ebpics/arshit.jpg',
+      image: '/ebpics/arshit.jpg',
     },
     {
       id: 2,
       name: 'Bhumika Bandyopadhyay',
       position: 'GENERAL SECRETARY',
-      image: '../ebpics/bhumika.jpg',
+      image: '/ebpics/bhumika.jpg',
     },
     {
       id: 3,
       name: 'Harkirat Singh',
       position: 'JOINT SECRETARY',
-      image: '../ebpics/harkirat.jpg',
+      image: '/ebpics/harkirat.jpg',
     },
     {
       id: 4,
       name: 'Simran',
       position: 'JOINT SECRETARY',
-      image: '../ebpics/simran.png',
+      image: '/ebpics/simran.png',
     },
     {
       id: 5,
       name: 'Maurya Kandhari',
       position: 'JOINT SECRETARY',
-      image: '../ebpics/maurya.jpg',
+      image: '/ebpics/maurya.jpg',
     },
     {
       id: 6,
       name: 'Riddhima Aggarwal',
       position: 'FINANCE SECRETARY',
-      image: '../ebpics/riddhima.JPG',
+      image: '/ebpics/riddhima.JPG',
     },
     {
       id: 7,
       name: 'Abheet Singh',
       position: 'FINANCE SECRETARY',
-      image: '../ebpics/abheet.jpg',
+      image: '/ebpics/abheet.jpg',
     },
     {
       id: 8,
       name: 'Akhil Gupta',
       position: 'WEB DEV LEAD',
-      image: '../ebpics/akhil.jpg',
+      image: '/ebpics/akhil.jpg',
     },
     {
       id: 9,
       name: 'Priyanshu Patel',
       position: 'WEB DEV LEAD',
-      image: '../ebpics/priyanshu.jpg',
+      image: '/ebpics/priyanshu.jpg',
     },
     {
       id: 10,
       name: 'Tanisha Lal',
       position: 'DESIGN AND MEDIA HEAD',
-      image: '../ebpics/tanisha.jpg',
+      image: '/ebpics/tanisha.jpg',
     },
     {
       id: 11,
       name: 'Aditi Sikarwar',
       position: 'DESIGN AND MEDIA HEAD',
-      image: '../ebpics/aditi.jpg',
+      image: '/ebpics/aditi.jpg',
     },
     {
       id: 12,
       name: 'Vandan Arora',
       position: 'AI /ML LEAD',
-      image: '../ebpics/vandan.jpeg',
+      image: '/ebpics/vandan.jpeg',
     },
     {
       id: 13,
       name: 'Jasmeet Kaur',
       position: 'AI /ML LEAD',
-      image: '../ebpics/jasmeet.jpg',
+      image: '/ebpics/jasmeet.jpg',
     },
     {
       id: 14,
       name: 'Gautam Narang',
       position: 'ELECTRONICS HEAD',
-      image: '../ebpics/gautam.jpg',
+      image: '/ebpics/gautam.jpg',
     },
     {
       id: 15,
       name: 'Harneet Singh',
       position: 'ELECTRONICS HEAD',
-      image: '../ebpics/harneet.jpg',
+      image: '/ebpics/harneet.jpg',
     },
     {
       id: 16,
       name: 'Aryan Batra',
       position: 'MARKETING AND PR HEAD',
-      image: '../ebpics/aryan.jpg',
+      image: '/ebpics/aryan.jpg',
     },
     {
       id: 17,
       name: 'Anjum Garg',
       position: 'MARKETING AND PR HEAD',
-      image: '../ebpics/anjum.jpg',
+      image: '/ebpics/anjum.jpg',
     },
   ]
 
@@ -150,18 +150,18 @@ function Team() {
   return (
     <div className="bg-black text-white min-h-screen">
       {/* Title Section */}
-      <section className="text-4xl font-extrabold text-center py-12 tracking-wider uppercase bg-[url('/src/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat">
+      <section className="text-4xl font-extrabold text-center py-12 tracking-wider uppercase bg-[url('/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat">
         Executive Board
         {groupedMembers.slice(0, 1).map(renderGroup)}
       </section>
 
       {/* Section 2 */}
-      <section className="font-extrabold bg-[url('/src/assets/landingBG2.png')] bg-cover bg-center bg-no-repeat">
+      <section className="font-extrabold bg-[url('/assets/landingBG2.png')] bg-cover bg-center bg-no-repeat">
         {groupedMembers.slice(1, 3).map(renderGroup)}
       </section>
 
       {/* Section 3 */}
-      <section className="font-extrabold bg-[url('/src/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat">
+      <section className="font-extrabold bg-[url('/assets/landingBG1.png')] bg-cover bg-center bg-no-repeat">
         {groupedMembers.slice(3).map(renderGroup)}
       </section>
     </div>

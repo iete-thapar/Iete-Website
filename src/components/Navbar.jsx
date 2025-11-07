@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import logo from '../assets/iete_logo.png'
+// moved logo into public/assets. Use public URL
+const logo = '/assets/iete_logo.png'
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
